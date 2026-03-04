@@ -1,20 +1,34 @@
-/* Remove full-viewport profile height */
+/* More space between profile and first section */
 .main .profile {
     min-height: unset;
-    padding-bottom: 20px;
+    padding-bottom: 48px;
 }
 
-/* Research section headings */
+/* Section spacing */
+.research-sections {
+    margin-top: 1rem;
+}
+
 .research-section {
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
 }
 
+/* Section headers — Columbia blue, clickable */
 .research-section h2 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-weight: 700;
     margin-bottom: 0.75rem;
     padding-bottom: 0.25rem;
     border-bottom: 1px solid var(--border);
+}
+
+.research-section h2 a {
+    color: #003DA5;
+    text-decoration: none;
+}
+
+.research-section h2 a:hover {
+    text-decoration: underline;
 }
 
 /* Plain paper list */
@@ -25,20 +39,22 @@
 }
 
 .paper-list li {
-    margin-bottom: 0.6rem;
+    margin-bottom: 0.5rem;
     line-height: 1.5;
 }
 
 .paper-list li a {
     font-weight: 600;
+    color: var(--primary);
 }
 
 .paper-list .paper-meta {
     color: var(--secondary);
     font-size: 0.9rem;
+    display: block;
 }
 
-/* Other writings: compact inline list */
+/* Other writings compact list */
 .writing-list {
     list-style: none;
     padding: 0;
