@@ -157,6 +157,28 @@
     text-decoration: underline;
 }
 
+/* Festival programs list */
+.program-list {
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 0 0 0;
+}
+
+.program-list li {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--primary);
+}
+
+.program-list li a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.program-list li a:hover {
+    text-decoration: underline;
+}
+
 /* Miscellanea book list */
 .book-list {
     list-style: none;
