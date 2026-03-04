@@ -2,10 +2,9 @@
 title: "A Wartime Labor Market: The Case of Ukraine"
 date: 2026-02-26
 url: /abz2026/
-tags: ["labor supply shock", "reallocation", "matching efficiency", "displacement", "conflict", "Ukraine"]
 author: ["Giacomo M. Anastasia", "Tito Boeri", "Oleksandr Zholud"]
-description: "We document one of the largest labor supply and reallocation shocks in recent history using data from Ukraine, and estimate the impact on job matching under extreme stress."
-summary: "Using data on workers and vacancies in Ukraine during the full-scale Russian invasion, we show that labor markets can adapt under extreme stress through wage flexibility, expanded participation, and organizational adaptation."
+description: "Forthcoming, Economic Policy"
+summary: "Forthcoming, *Economic Policy*"
 editPost:
     URL: ""
     Text: "Forthcoming, Economic Policy"

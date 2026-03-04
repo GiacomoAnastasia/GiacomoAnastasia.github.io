@@ -2,10 +2,9 @@
 title: "The Labour Market in Ukraine: Rebuild Better"
 date: 2022-01-01
 url: /abkz2022/
-tags: ["Ukraine", "labor market", "reconstruction", "displacement", "war economy"]
 author: ["Giacomo Anastasia", "Tito Boeri", "Marianna Kudlyak", "Oleksandr Zholud"]
-description: "A book chapter on rebuilding the Ukrainian labour market better after the Russian invasion, proposing structural reforms and emergency policies for reconstruction."
-summary: "The Ukrainian labour market not only needs to be rebuilt, it needs to be rebuilt better. We illustrate the challenges and propose strategies for reconstruction, drawing on experience from other European countries that have faced military conflicts."
+description: "Chapter in Rebuilding Ukraine: Principles and Policies, CEPR Press, 2022"
+summary: "Chapter in *Rebuilding Ukraine: Principles and Policies*, CEPR Press, 2022"
 editPost:
     URL: ""
     Text: "Chapter in Rebuilding Ukraine: Principles and Policies, CEPR Press"
