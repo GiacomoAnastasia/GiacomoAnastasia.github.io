@@ -10,10 +10,10 @@ pagination:
 menu:
     main:
         - name: Working Paper
-          url: workingpapers/
+          url: abz2026/
           weight: 1
         - name: Book Chapter
-          url: bookchapters/
+          url: abkz2022/
           weight: 2
         - name: Other Writings
           url: otherwritings/
