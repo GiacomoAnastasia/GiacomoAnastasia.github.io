@@ -128,9 +128,14 @@
             {{- $page_url:= $currentPage.Permalink | absLangURL }}
             {{- $is_search := eq (site.GetPage .KeyName).Layout `search` }}
             {{- if .HasChildren }}
+            {{- $childActive := false }}
+            {{- range .Children }}
+            {{- $child_url := (cond (strings.HasSuffix .URL "/") .URL (printf "%s/" .URL) ) | absLangURL }}
+            {{- if eq $child_url $page_url }}{{- $childActive = true }}{{- end }}
+            {{- end }}
             <li class="has-dropdown">
                 <details>
-                    <summary>{{- .Name -}}</summary>
+                    <summary><span {{- if $childActive }} class="active"{{- end }}>{{- .Name -}}</span></summary>
                     <ul class="dropdown">
                         {{- range .Children }}
                         {{- $child_url := (cond (strings.HasSuffix .URL "/") .URL (printf "%s/" .URL) ) | absLangURL }}
