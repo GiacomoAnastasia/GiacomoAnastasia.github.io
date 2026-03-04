@@ -10,7 +10,13 @@
     {{- if .Params.editPost.URL }}
     <a href="{{ .Params.editPost.URL }}" target="_blank" rel="noopener">{{ .Title }}</a>
     {{- else }}{{ .Title }}{{- end }}
-    {{- with .Params.author }} (with {{ range $i, $a := . }}{{ if gt $i 0 }}{{ if eq $i (sub (len .) 1) }} and {{ else }}, {{ end }}{{ end }}{{ if ne $a "Giacomo Anastasia" }}{{ $a }}{{ end }}{{ end }}){{ end }}.
+    {{- $coauthors := slice }}
+    {{- range .Params.author }}
+      {{- if and (ne . "Giacomo Anastasia") (ne . "Giacomo M. Anastasia") }}
+        {{- $coauthors = $coauthors | append . }}
+      {{- end }}
+    {{- end }}
+    {{- if $coauthors }} (with {{ delimit $coauthors ", " }}){{ end }}.
     {{ .Params.editPost.Text }}{{ with .Date }}, {{ .Format "2006" }}{{ end }}.
   </li>
   {{- end }}
