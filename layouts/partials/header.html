@@ -127,6 +127,23 @@
             {{- $menu_item_url := (cond (strings.HasSuffix .URL "/") .URL (printf "%s/" .URL) ) | absLangURL }}
             {{- $page_url:= $currentPage.Permalink | absLangURL }}
             {{- $is_search := eq (site.GetPage .KeyName).Layout `search` }}
+            {{- if .HasChildren }}
+            <li class="has-dropdown">
+                <details>
+                    <summary>{{- .Name -}}</summary>
+                    <ul class="dropdown">
+                        {{- range .Children }}
+                        {{- $child_url := (cond (strings.HasSuffix .URL "/") .URL (printf "%s/" .URL) ) | absLangURL }}
+                        <li>
+                            <a href="{{ .URL | absLangURL }}">
+                                <span {{- if eq $child_url $page_url }} class="active" {{- end }}>{{- .Name -}}</span>
+                            </a>
+                        </li>
+                        {{- end }}
+                    </ul>
+                </details>
+            </li>
+            {{- else }}
             <li>
                 <a href="{{ .URL | absLangURL }}" title="{{ .Title | default .Name }} {{- cond $is_search (" (Alt + /)" | safeHTMLAttr) ("" | safeHTMLAttr ) }}"
                 {{- cond $is_search (" accesskey=/" | safeHTMLAttr) ("" | safeHTMLAttr ) }}>
@@ -145,6 +162,7 @@
                     {{- end }}
                 </a>
             </li>
+            {{- end }}
             {{- end }}
         </ul>
     </nav>
