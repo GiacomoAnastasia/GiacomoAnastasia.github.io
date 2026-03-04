@@ -2,3 +2,28 @@
 public/
 resources/
 .hugo_build.lock
+
+# macOS
+.DS_Store
+
+# CV source and build artifacts
+static/cv/*.aux
+static/cv/*.bbl
+static/cv/*.bcf
+static/cv/*.blg
+static/cv/*.log
+static/cv/*.out
+static/cv/*.run.xml
+static/cv/*.bib
+static/cv/*.tex
+
+# Photos (large originals)
+static/*.jpg
+static/*.jpeg
+static/*.JPG
+static/*.JPEG
+
+# Keep favicons and PDFs
+!static/favicon*
+!static/apple-touch-icon*
+!static/*.pdf
