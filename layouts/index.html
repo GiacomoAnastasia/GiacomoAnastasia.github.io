@@ -13,18 +13,10 @@
     <h2><a href="{{ $headerURL }}">{{ $section.Title }}</a></h2>
     <ul class="paper-list">
       {{- range $pages }}
-      {{- $authorList := slice }}
-      {{- range .Params.author }}
-        {{- if or (eq . "Giacomo Anastasia") (eq . "Giacomo M. Anastasia") }}
-          {{- $authorList = $authorList | append "<strong>Giacomo Anastasia</strong>" }}
-        {{- else }}
-          {{- $authorList = $authorList | append . }}
-        {{- end }}
-      {{- end }}
-      {{- $authors := delimit $authorList ", " }}
+      {{- $authors := delimit .Params.author ", " }}
       <li>
         <a href="{{ .Permalink }}">{{ .Title }}</a><br>
-        <span class="paper-meta">{{ $authors | safeHTML }}</span>
+        <span class="paper-meta">{{ $authors }}</span>
         <span class="paper-meta">{{ .Summary | markdownify }}</span>
         {{- with .Params.media }}
         <span class="paper-meta">Media: {{ range $i, $m := . }}{{ if $i }}, {{ end }}<a href="{{ $m.url }}" target="_blank" rel="noopener">{{ $m.name }}</a>{{ end }}</span>
