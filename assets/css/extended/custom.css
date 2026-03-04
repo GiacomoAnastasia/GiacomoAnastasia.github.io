@@ -1,0 +1,52 @@
+/* Remove full-viewport profile height */
+.main .profile {
+    min-height: unset;
+    padding-bottom: 20px;
+}
+
+/* Research section headings */
+.research-section {
+    margin-bottom: 2rem;
+}
+
+.research-section h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.25rem;
+    border-bottom: 1px solid var(--border);
+}
+
+/* Plain paper list */
+.paper-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.paper-list li {
+    margin-bottom: 0.6rem;
+    line-height: 1.5;
+}
+
+.paper-list li a {
+    font-weight: 600;
+}
+
+.paper-list .paper-meta {
+    color: var(--secondary);
+    font-size: 0.9rem;
+}
+
+/* Other writings: compact inline list */
+.writing-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.writing-list li {
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}

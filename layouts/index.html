@@ -2,35 +2,45 @@
 
 {{- partial "index_profile.html" . }}
 
-{{- $sections := slice "workingpapers" "bookchapters" "otherwritings" }}
-{{- $titles := dict "workingpapers" "Working Paper" "bookchapters" "Book Chapter" "otherwritings" "Other Writings" }}
+<div class="research-sections">
 
-{{- range $sections }}
+  {{- /* Working Paper and Book Chapter — titled links with venue + meta */}}
+  {{- range slice "workingpapers" "bookchapters" }}
   {{- $section := site.GetPage . }}
-  {{- if $section }}
-  {{- $pages := $section.RegularPages }}
-  {{- if $pages }}
-  <div class="home-section">
-    <h2 class="section-title">{{ index $titles . }}</h2>
-    {{- range $pages }}
-    <article class="post-entry">
-      <header class="entry-header">
-        <h2 class="entry-hint-parent">{{- .Title }}</h2>
-      </header>
-      {{- if (ne (.Param "hideSummary") true) }}
-      <div class="entry-content">
-        <p>{{ .Summary | markdownify }}{{ if .Truncated }}...{{ end }}</p>
-      </div>
+  {{- if $section }}{{- $pages := $section.RegularPages }}{{- if $pages }}
+  <div class="research-section">
+    <h2>{{ $section.Title }}</h2>
+    <ul class="paper-list">
+      {{- range $pages }}
+      <li>
+        <a href="{{ .Permalink }}">{{ .Title }}</a><br>
+        <span class="paper-meta">{{ .Summary | markdownify }} · {{ partial "post_meta.html" . }}</span>
+      </li>
       {{- end }}
-      <footer class="entry-footer">
-        {{- partial "post_meta.html" . -}}
-      </footer>
-      <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
-    </article>
-    {{- end }}
+    </ul>
   </div>
+  {{- end }}{{- end }}
   {{- end }}
-  {{- end }}
-{{- end }}
+
+  {{- /* Other Writings — compact list with external links */}}
+  {{- $ow := site.GetPage "otherwritings" }}
+  {{- if $ow }}{{- $pages := $ow.RegularPages }}{{- if $pages }}
+  <div class="research-section">
+    <h2>Other Writings</h2>
+    <ul class="writing-list">
+      {{- range $pages }}
+      <li>
+        {{- if .Params.editPost.URL }}
+        <a href="{{ .Params.editPost.URL }}" target="_blank" rel="noopener">{{ .Title }}</a>
+        {{- else }}{{ .Title }}{{- end }}
+        {{- with .Params.author }} (with {{ range $i, $a := . }}{{ if gt $i 0 }}{{if eq $i (sub (len .) 1)}} and {{ else }}, {{ end }}{{ end }}{{ if ne $a "Giacomo Anastasia" }}{{ $a }}{{ end }}{{ end }}){{ end }}.
+        {{ .Params.editPost.Text }}{{ with .Date }}, {{ .Format "2006" }}{{ end }}.
+      </li>
+      {{- end }}
+    </ul>
+  </div>
+  {{- end }}{{- end }}
+
+</div>
 
 {{- end }}{{- /* end main */ -}}
