@@ -41,6 +41,13 @@
     text-decoration: underline;
 }
 
+/* Outlet on paper single pages */
+.post-description {
+    font-size: 0.95rem;
+    color: var(--secondary);
+    margin-top: 0.25rem;
+}
+
 /* Plain paper list */
 .paper-list {
     list-style: none;

@@ -18,10 +18,6 @@
 {{- end }}
 {{- end }}
 
-{{- with .Params.description }}
-{{- $scratch.Add "meta" (slice .) }}
-{{- end }}
-
 {{- with ($scratch.Get "meta") }}
 {{- delimit . "&nbsp;&middot;&nbsp;" | safeHTML -}}
 {{- end -}}
