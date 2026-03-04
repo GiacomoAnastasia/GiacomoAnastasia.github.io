@@ -19,7 +19,7 @@
     display: none;
 }
 
-.has-dropdown details[open] summary {
+.has-dropdown details[open] summary span {
     font-weight: 500;
     border-bottom: 2px solid currentColor;
 }
@@ -46,6 +46,7 @@
 .has-dropdown .dropdown li,
 .has-dropdown .dropdown li + li {
     margin: 0;
+    margin-inline-start: 0;
 }
 
 .has-dropdown .dropdown li a {
