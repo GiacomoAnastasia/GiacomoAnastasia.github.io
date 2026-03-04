@@ -25,7 +25,7 @@ menu:
 params:
     description: "Giacomo Anastasia is a PhD student in Economics at Columbia University. His research interests are in public economics, labor economics, and industrial organization."
     author: Giacomo Anastasia
-    # googleAnalyticsID: "G-XXXXX"
+    googleAnalyticsID: "G-7Y3JJHWLZL"
     DateFormat: "January 2006"
     defaultTheme: light
     hideFooter: false
