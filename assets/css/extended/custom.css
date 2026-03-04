@@ -62,6 +62,13 @@
     text-decoration: underline;
 }
 
+/* Right-align nav menu on mobile */
+@media screen and (max-width: 768px) {
+    #menu {
+        margin-inline-start: auto;
+    }
+}
+
 /* More space between profile and first section */
 .main .profile {
     min-height: unset;
