@@ -13,9 +13,11 @@ editPost:
 
 ---
 
-##### Download
+##### Links
 
 - [Paper](/ABZ%202026.pdf)
+- [VoxEU column](https://cepr.org/voxeu/columns/wartime-labour-market-case-ukraine)
+- [RF Berlin summary](https://www.rfberlin.com/network-paper/a-wartime-labor-market/)
 
 ---
 

@@ -13,9 +13,10 @@ editPost:
 
 ---
 
-##### Download
+##### Links
 
 - [Chapter](/ABKZ%202022.pdf)
+- [VoxEU column](https://cepr.org/voxeu/columns/labour-market-ukraine-rebuild-better)
 
 ---
 
