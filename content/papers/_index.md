@@ -1,4 +1,4 @@
 ---
 title: "Papers"
-description: "Preprints and articles by Professor Dr von Igelfeld."
+description: "Working papers and publications by Giacomo Anastasia."
 ---
