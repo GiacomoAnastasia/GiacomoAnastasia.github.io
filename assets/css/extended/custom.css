@@ -38,6 +38,10 @@
     display: block;
 }
 
+.has-dropdown .dropdown li {
+    margin: 0;
+}
+
 .has-dropdown .dropdown li a {
     display: block;
     padding: 0.25rem 0.75rem;
