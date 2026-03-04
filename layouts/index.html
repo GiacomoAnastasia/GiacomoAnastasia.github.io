@@ -8,8 +8,9 @@
   {{- range slice "workingpapers" "bookchapters" }}
   {{- $section := site.GetPage . }}
   {{- if $section }}{{- $pages := $section.RegularPages }}{{- if $pages }}
+  {{- $headerURL := cond (eq (len $pages) 1) (index $pages 0).Permalink $section.Permalink }}
   <div class="research-section">
-    <h2><a href="{{ $section.Permalink }}">{{ $section.Title }}</a></h2>
+    <h2><a href="{{ $headerURL }}">{{ $section.Title }}</a></h2>
     <ul class="paper-list">
       {{- range $pages }}
       {{- $authors := delimit .Params.author ", " }}
