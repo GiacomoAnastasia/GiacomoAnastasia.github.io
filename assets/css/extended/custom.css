@@ -54,7 +54,7 @@
 }
 
 .paper-list .paper-meta {
-    color: var(--secondary);
+    color: var(--primary);
     font-size: 0.9rem;
     display: block;
 }
@@ -79,6 +79,10 @@
     line-height: 1.6;
     margin-bottom: 0.5rem;
     color: var(--primary);
+}
+
+.misc-text a {
+    text-decoration: underline;
 }
 
 /* Other writings compact list */
