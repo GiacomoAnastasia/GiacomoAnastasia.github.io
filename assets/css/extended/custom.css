@@ -19,6 +19,11 @@
     display: none;
 }
 
+.has-dropdown details[open] summary {
+    font-weight: 500;
+    border-bottom: 2px solid currentColor;
+}
+
 .has-dropdown .dropdown {
     display: none;
     position: absolute;
