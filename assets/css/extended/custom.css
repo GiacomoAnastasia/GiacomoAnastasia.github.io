@@ -4,6 +4,11 @@
     padding-bottom: 48px;
 }
 
+/* Prevent profile photo from stretching */
+.profile-mode .profile img {
+    object-fit: cover;
+}
+
 /* Section spacing */
 .research-sections {
     margin-top: 1rem;
