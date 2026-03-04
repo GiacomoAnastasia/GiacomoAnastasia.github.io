@@ -1,4 +1,8 @@
 /* Research dropdown in nav */
+#menu {
+    overflow: visible;
+}
+
 .has-dropdown {
     position: relative;
 }
@@ -7,7 +11,7 @@
     list-style: none;
     cursor: pointer;
     padding: 0;
-    font-size: 1rem;
+    font-size: 16px;
     color: var(--primary);
 }
 
