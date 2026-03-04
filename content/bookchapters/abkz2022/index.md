@@ -8,6 +8,9 @@ summary: "Chapter in *Rebuilding Ukraine: Principles and Policies*, CEPR Press, 
 editPost:
     URL: ""
     Text: "Chapter in Rebuilding Ukraine: Principles and Policies, CEPR Press"
+media:
+    - name: "VoxEU"
+      url: "https://cepr.org/voxeu/columns/labour-market-ukraine-rebuild-better"
 
 ---
 

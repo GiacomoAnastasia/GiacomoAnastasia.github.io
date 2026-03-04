@@ -8,6 +8,11 @@ summary: "Forthcoming, *Economic Policy*"
 editPost:
     URL: ""
     Text: "Forthcoming, Economic Policy"
+media:
+    - name: "VoxEU"
+      url: "https://cepr.org/voxeu/columns/wartime-labour-market-case-ukraine"
+    - name: "RF Berlin"
+      url: "https://www.rfberlin.com/research-insights/still-standing-the-ukranian-labor-market-at-war/"
 
 ---
 
@@ -17,7 +22,7 @@ editPost:
 
 - [Paper](/ABZ%202026.pdf)
 - [VoxEU column](https://cepr.org/voxeu/columns/wartime-labour-market-case-ukraine)
-- [RF Berlin summary](https://www.rfberlin.com/network-paper/a-wartime-labor-market/)
+- [RF Berlin](https://www.rfberlin.com/research-insights/still-standing-the-ukranian-labor-market-at-war/)
 
 ---
 
