@@ -13,6 +13,22 @@ media:
       url: "https://cepr.org/voxeu/columns/wartime-labour-market-case-ukraine"
     - name: "RFBerlin Research Insight"
       url: "https://www.rfberlin.com/research-insights/still-standing-the-ukranian-labor-market-at-war/"
+    - name: "FT"
+      url: "https://www.ft.com/content/d78cffa4-f74c-436e-8215-d06a5f02f143"
+    - name: "Il Foglio"
+      url: "https://www.ilfoglio.it/economia/2026/02/26/news/l-incredibile-resistenza-del-mercato-del-lavoro-ucraino-sotto-le-bombe-8705615/"
+    - name: "Spiegel"
+      url: "https://www.spiegel.de/wirtschaft/ukraine-arbeitsmarkt-studie-zeigt-erholung-trotz-kriegsschaeden-a-d0df0970-faf5-4586-a117-3806e9c60c7b"
+    - name: "Handelsblatt"
+      url: "https://www.handelsblatt.com/politik/international/arbeitsmarkt-ukrainischer-arbeitsmarkt-laut-studie-widerstandsfaehig/100202322.html"
+    - name: "FT"
+      url: "https://www.ft.com/content/d78cffa4-f74c-436e-8215-d06a5f02f143"
+    - name: "Il Foglio"
+      url: "https://www.ilfoglio.it/economia/2026/02/26/news/l-incredibile-resistenza-del-mercato-del-lavoro-ucraino-sotto-le-bombe-8705615/"
+    - name: "Spiegel"
+      url: "https://www.spiegel.de/wirtschaft/ukraine-arbeitsmarkt-studie-zeigt-erholung-trotz-kriegsschaeden-a-d0df0970-faf5-4586-a117-3806e9c60c7b"
+    - name: "Handelsblatt"
+      url: "https://www.handelsblatt.com/politik/international/arbeitsmarkt-ukrainischer-arbeitsmarkt-laut-studie-widerstandsfaehig/100202322.html"
 
 ---
 
