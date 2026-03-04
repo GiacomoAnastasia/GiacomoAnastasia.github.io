@@ -81,8 +81,9 @@
     color: var(--primary);
 }
 
-.misc-text a {
-    text-decoration: underline;
+.misc-text a::after {
+    content: " ↗";
+    font-size: 0.8em;
 }
 
 /* Other writings compact list */
