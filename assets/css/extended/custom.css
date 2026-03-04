@@ -56,12 +56,27 @@
 .paper-list li a {
     font-weight: 600;
     color: var(--primary);
+    text-decoration: none;
+}
+
+.paper-list li a:hover {
+    text-decoration: underline;
 }
 
 .paper-list .paper-meta {
     color: var(--primary);
     font-size: 0.9rem;
     display: block;
+}
+
+.paper-list .paper-meta a {
+    color: var(--primary);
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.paper-list .paper-meta a:hover {
+    text-decoration: underline;
 }
 
 /* Miscellanea book list */
