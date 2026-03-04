@@ -16,7 +16,8 @@
       {{- $authors := delimit .Params.author ", " }}
       <li>
         <a href="{{ .Permalink }}">{{ .Title }}</a><br>
-        <span class="paper-meta">{{ .Summary | markdownify }} · {{ $authors }}</span>
+        <span class="paper-meta">{{ $authors }}</span>
+        <span class="paper-meta">{{ .Summary | markdownify }}</span>
         {{- with .Params.media }}
         <span class="paper-meta">Media: {{ range $i, $m := . }}{{ if $i }}, {{ end }}<a href="{{ $m.url }}" target="_blank" rel="noopener">{{ $m.name }}</a>{{ end }}</span>
         {{- end }}
