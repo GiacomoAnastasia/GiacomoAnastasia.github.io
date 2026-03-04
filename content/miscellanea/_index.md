@@ -2,9 +2,17 @@
 title: "Miscellanea"
 ---
 
+##### International Festival of Economics
+
+Since 2021, I help organize the [International Festival of Economics](https://www.festivalinternazionaledelleconomia.com) in Turin. The next edition will be held on 22–25 October 2026.
+
+---
+
 ##### Book of the Month
 
 Each month, Giovanni Brocca (PhD student at NYU Stern) and I review a book for [RivistaEco](https://www.rivistaeco.com).
+
+<div class="book-list">
 
 - *Attacco alla Banca d'Italia* — Beniamino Andrea Piccone
 - *The Technological Republic* — Alex Karp
@@ -31,4 +39,4 @@ Each month, Giovanni Brocca (PhD student at NYU Stern) and I review a book for [
 - *The Profit Paradox* — Jan Eeckhout
 - *The Chosen Few* — Maristella Botticini & Zvi Eckstein
 
----
+</div>

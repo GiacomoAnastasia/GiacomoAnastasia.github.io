@@ -59,6 +59,12 @@
     display: block;
 }
 
+/* Miscellanea book list */
+.book-list ul, .book-list li {
+    font-size: 0.85rem;
+    line-height: 1.6;
+}
+
 /* Miscellanea free-form text */
 .misc-text {
     font-size: 0.95rem;
