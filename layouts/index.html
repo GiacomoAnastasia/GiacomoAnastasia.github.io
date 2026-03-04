@@ -28,28 +28,6 @@
   {{- end }}{{- end }}
   {{- end }}
 
-  {{- /* Other Writings */}}
-  {{- $ow := site.GetPage "otherwritings" }}
-  {{- if $ow }}{{- $pages := $ow.RegularPages }}{{- if $pages }}
-  <div class="research-section">
-    <h2><a href="{{ $ow.Permalink }}">Other Writings</a></h2>
-    <ul class="writing-list">
-      {{- range $pages }}
-      {{- $coauthors := slice }}
-      {{- range .Params.author }}
-        {{- if and (ne . "Giacomo Anastasia") (ne . "Giacomo M. Anastasia") }}
-          {{- $coauthors = $coauthors | append . }}
-        {{- end }}
-      {{- end }}
-      <li>
-        {{- if .Params.editPost.URL }}<a href="{{ .Params.editPost.URL }}" target="_blank" rel="noopener">{{ .Title }}</a>{{- else }}{{ .Title }}{{- end -}}
-        {{- if $coauthors }} (with {{ delimit $coauthors ", " }}){{ end }}.
-        {{ .Params.editPost.Text }}{{ with .Date }}, {{ .Format "2006" }}{{ end }}.
-      </li>
-      {{- end }}
-    </ul>
-  </div>
-  {{- end }}{{- end }}
 
   {{- /* Miscellanea */}}
   <div class="research-section">

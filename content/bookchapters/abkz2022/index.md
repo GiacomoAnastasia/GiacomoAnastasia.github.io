@@ -11,6 +11,10 @@ editPost:
 media:
     - name: "VoxEU"
       url: "https://cepr.org/voxeu/columns/labour-market-ukraine-rebuild-better"
+    - name: "Project Syndicate"
+      url: "https://www.project-syndicate.org/commentary/ukraine-brain-drain-rebuilding-human-capital-by-giacomo-anastasia-and-tito-boeri-2023-11"
+    - name: "laVoce"
+      url: "https://www.lavoce.info/archives/99340/il-dopoguerra-dellucraina/"
 
 ---
 
