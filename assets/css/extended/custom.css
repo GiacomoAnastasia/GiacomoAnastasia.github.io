@@ -201,7 +201,7 @@
     color: var(--primary);
 }
 
-.misc-text a:not(.internal)::after {
+.misc-text a::after {
     content: " [↗]";
     font-size: 0.8em;
 }
