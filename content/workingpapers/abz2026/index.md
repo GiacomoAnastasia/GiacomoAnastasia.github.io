@@ -21,6 +21,8 @@ media:
       url: "https://www.spiegel.de/wirtschaft/ukraine-arbeitsmarkt-studie-zeigt-erholung-trotz-kriegsschaeden-a-d0df0970-faf5-4586-a117-3806e9c60c7b"
     - name: "Handelsblatt"
       url: "https://www.handelsblatt.com/politik/international/arbeitsmarkt-ukrainischer-arbeitsmarkt-laut-studie-widerstandsfaehig/100202322.html"
+    - name: "VoxTalks Economics [podcast]"
+      url: "https://open.spotify.com/episode/6ku38cF7Qplvqq5YGtfUYW?si=jvq6jNDLTpSKR8B8QXQSPQ"
 
 ---
 
