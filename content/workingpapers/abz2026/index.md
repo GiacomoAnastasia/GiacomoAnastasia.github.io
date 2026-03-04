@@ -11,7 +11,7 @@ editPost:
 media:
     - name: "VoxEU"
       url: "https://cepr.org/voxeu/columns/wartime-labour-market-case-ukraine"
-    - name: "RF Berlin"
+    - name: "RFBerlin Research Insight"
       url: "https://www.rfberlin.com/research-insights/still-standing-the-ukranian-labor-market-at-war/"
 
 ---
@@ -22,7 +22,7 @@ media:
 
 - [Paper](/ABZ%202026.pdf)
 - [VoxEU column](https://cepr.org/voxeu/columns/wartime-labour-market-case-ukraine)
-- [RF Berlin](https://www.rfberlin.com/research-insights/still-standing-the-ukranian-labor-market-at-war/)
+- [RFBerlin Research Insight](https://www.rfberlin.com/research-insights/still-standing-the-ukranian-labor-market-at-war/)
 
 ---
 
