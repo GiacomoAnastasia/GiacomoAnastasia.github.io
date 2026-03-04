@@ -16,7 +16,7 @@
       {{- $authorList := slice }}
       {{- range .Params.author }}
         {{- if or (eq . "Giacomo Anastasia") (eq . "Giacomo M. Anastasia") }}
-          {{- $authorList = $authorList | append "<strong>Giacomo M. Anastasia</strong>" }}
+          {{- $authorList = $authorList | append "<strong>Giacomo Anastasia</strong>" }}
         {{- else }}
           {{- $authorList = $authorList | append . }}
         {{- end }}
