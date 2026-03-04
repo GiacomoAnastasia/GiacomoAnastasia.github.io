@@ -38,7 +38,8 @@
     display: block;
 }
 
-.has-dropdown .dropdown li {
+.has-dropdown .dropdown li,
+.has-dropdown .dropdown li + li {
     margin: 0;
 }
 
