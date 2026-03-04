@@ -7,20 +7,23 @@ enableRobotsTXT: true
 pagination:
   pagerSize: 20
 
-taxonomies:
-    tag: tags
-
 menu:
     main:
-        - name: Papers
-          url: papers/
+        - name: Working Paper
+          url: workingpapers/
           weight: 1
+        - name: Book Chapter
+          url: bookchapters/
+          weight: 2
+        - name: Other Writings
+          url: otherwritings/
+          weight: 3
         - name: CV
           url: cv.pdf
-          weight: 2
+          weight: 4
 
 params:
-    description: "Giacomo Anastasia is a PhD student in Economics at Columbia University. His research focuses on public economics, labor economics, and industrial organization."
+    description: "Giacomo Anastasia is a PhD student in Economics at Columbia University. His research interests are in public economics, labor economics, and industrial organization."
     author: Giacomo Anastasia
     # googleAnalyticsID: "G-XXXXX"
     DateFormat: "January 2006"
@@ -35,7 +38,7 @@ params:
     ShowBreadCrumbs: false
     ShowCodeCopyButtons: true
     ShowAllPagesInArchive: false
-    MainSections: ["papers"]
+    MainSections: ["workingpapers","bookchapters","otherwritings"]
     ShowToc: false
     disableScrollToTop: true
     TocOpen: true
@@ -46,15 +49,17 @@ params:
     profileMode:
           enabled: true
           title: Giacomo Anastasia
-          subtitle: "I am a PhD student in Economics at Columbia University. My research focuses on public economics, labor economics, and industrial organization."
+          subtitle: "I am a PhD student in Economics at Columbia University. My research interests are in public economics, labor economics, and industrial organization."
           imageUrl: "picture.jpeg"
           imageWidth: 160
           imageHeight: 160
           buttons:
-            - name: Papers
-              url: papers/
-            - name: Tags
-              url: tags/
+            - name: Working Paper
+              url: workingpapers/
+            - name: Book Chapter
+              url: bookchapters/
+            - name: Other Writings
+              url: otherwritings/
 
     socialIcons:
         - name: CV
