@@ -53,13 +53,6 @@ params:
           imageUrl: "picture.jpeg"
           imageWidth: 160
           imageHeight: 160
-          buttons:
-            - name: Working Paper
-              url: workingpapers/
-            - name: Book Chapter
-              url: bookchapters/
-            - name: Other Writings
-              url: otherwritings/
 
     socialIcons:
         - name: CV

@@ -1,0 +1,36 @@
+{{- define "main" }}
+
+{{- partial "index_profile.html" . }}
+
+{{- $sections := slice "workingpapers" "bookchapters" "otherwritings" }}
+{{- $titles := dict "workingpapers" "Working Paper" "bookchapters" "Book Chapter" "otherwritings" "Other Writings" }}
+
+{{- range $sections }}
+  {{- $section := site.GetPage . }}
+  {{- if $section }}
+  {{- $pages := $section.RegularPages }}
+  {{- if $pages }}
+  <div class="home-section">
+    <h2 class="section-title">{{ index $titles . }}</h2>
+    {{- range $pages }}
+    <article class="post-entry">
+      <header class="entry-header">
+        <h2 class="entry-hint-parent">{{- .Title }}</h2>
+      </header>
+      {{- if (ne (.Param "hideSummary") true) }}
+      <div class="entry-content">
+        <p>{{ .Summary | markdownify }}{{ if .Truncated }}...{{ end }}</p>
+      </div>
+      {{- end }}
+      <footer class="entry-footer">
+        {{- partial "post_meta.html" . -}}
+      </footer>
+      <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+    </article>
+    {{- end }}
+  </div>
+  {{- end }}
+  {{- end }}
+{{- end }}
+
+{{- end }}{{- /* end main */ -}}
