@@ -44,7 +44,7 @@
 }
 
 .has-dropdown .dropdown li,
-.has-dropdown .dropdown li + li {
+#menu .dropdown li + li {
     margin: 0;
     margin-inline-start: 0;
 }
