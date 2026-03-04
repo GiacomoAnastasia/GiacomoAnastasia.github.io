@@ -59,6 +59,14 @@
     display: block;
 }
 
+/* Miscellanea free-form text */
+.misc-text {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+    color: var(--primary);
+}
+
 /* Other writings compact list */
 .writing-list {
     list-style: none;
