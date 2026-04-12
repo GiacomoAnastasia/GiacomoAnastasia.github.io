@@ -22,7 +22,7 @@
         <p class="paper-abstract">{{ . }}</p>
         {{- end }}
         {{- with .Params.media }}
-        <span class="paper-meta">Media: {{ range $i, $m := . }}{{ if $i }}, {{ end }}<a href="{{ $m.url }}" target="_blank" rel="noopener">{{ $m.name }}</a>{{ end }}</span>
+        <span class="paper-meta">Media: {{ range $i, $m := . }}{{ if $i }}, {{ end }}{{ if $m.urls }}{{ $m.name }} [{{ range $j, $u := $m.urls }}{{ if $j }} &amp; {{ end }}<a href="{{ $u }}" target="_blank" rel="noopener">here</a>{{ end }}]{{ else }}<a href="{{ $m.url }}" target="_blank" rel="noopener">{{ $m.name }}</a>{{ end }}{{ end }}</span>
         {{- end }}
       </li>
       {{- end }}
