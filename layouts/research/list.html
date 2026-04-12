@@ -1,0 +1,36 @@
+{{- define "main" }}
+
+<div class="page-header">
+  <h1>Research</h1>
+</div>
+
+<div class="research-sections">
+
+  {{- range slice "workingpapers" "bookchapters" }}
+  {{- $section := site.GetPage . }}
+  {{- if $section }}{{- $pages := $section.RegularPages }}{{- if $pages }}
+  <div class="research-section">
+    <h2>{{ $section.Title }}</h2>
+    <ul class="paper-list">
+      {{- range $pages }}
+      {{- $authors := delimit .Params.author ", " }}
+      <li>
+        <a href="{{ .Permalink }}">{{ .Title }}</a><br>
+        <span class="paper-meta">{{ $authors }}</span>
+        <span class="paper-meta">{{ .Summary | markdownify }}</span>
+        {{- with .Params.abstract }}
+        <p class="paper-abstract">{{ . }}</p>
+        {{- end }}
+        {{- with .Params.media }}
+        <span class="paper-meta">Media: {{ range $i, $m := . }}{{ if $i }}, {{ end }}<a href="{{ $m.url }}" target="_blank" rel="noopener">{{ $m.name }}</a>{{ end }}</span>
+        {{- end }}
+      </li>
+      {{- end }}
+    </ul>
+  </div>
+  {{- end }}{{- end }}
+  {{- end }}
+
+</div>
+
+{{- end }}
