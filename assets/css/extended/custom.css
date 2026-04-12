@@ -26,22 +26,17 @@
     margin-bottom: 2.5rem;
 }
 
-/* Page title — Columbia blue */
-.page-header h1 {
-    color: #003DA5;
-}
-
-/* Section headers — Columbia blue, clickable */
+/* Section headers */
 .research-section h2 {
     font-size: 1.3rem;
     font-weight: 700;
     margin-bottom: 0.75rem;
     padding-bottom: 0.25rem;
-    border-bottom: 1px solid var(--border);
+    border-bottom: 2px solid #B9D9EB;
 }
 
 .research-section h2 a {
-    color: #003DA5;
+    color: #003087;
     text-decoration: none;
 }
 
