@@ -15,7 +15,7 @@
       {{- range $pages }}
       {{- $authors := delimit .Params.author ", " }}
       <li>
-        <a href="{{ .Permalink }}">{{ .Title }}</a><br>
+        <a href="{{ .Params.pdf | default .Permalink }}" target="_blank" rel="noopener">{{ .Title }}</a><br>
         <span class="paper-meta">{{ $authors }}</span>
         <span class="paper-meta">{{ .Summary | markdownify }}</span>
         {{- with .Params.abstract }}

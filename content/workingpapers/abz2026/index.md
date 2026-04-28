@@ -2,6 +2,9 @@
 title: "A Wartime Labor Market: The Case of Ukraine"
 date: 2026-02-26
 url: /abz2026/
+pdf: "/ABZ%202026.pdf"
+build:
+  render: never
 author: ["Giacomo Anastasia", "Tito Boeri", "Oleksandr Zholud"]
 description: "Forthcoming, Economic Policy"
 summary: "Forthcoming, *Economic Policy*"
