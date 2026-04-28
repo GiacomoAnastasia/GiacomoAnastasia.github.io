@@ -4,12 +4,13 @@
 
 <div class="research-sections">
 
-  {{- /* Working Paper and Book Chapter */}}
-  {{- range slice "workingpapers" "bookchapters" }}
-  {{- $section := site.GetPage . }}
-  {{- if $section }}{{- $pages := $section.RegularPages }}{{- if $pages }}
+  {{- /* Research */}}
   <div class="research-section">
-    <h2><a href="/research/">{{ $section.Title }}</a></h2>
+    <h2><a href="/research/">Research</a></h2>
+    {{- range slice "workingpapers" "bookchapters" }}
+    {{- $section := site.GetPage . }}
+    {{- if $section }}{{- $pages := $section.RegularPages }}{{- if $pages }}
+    <h3 class="paper-subsection-title">{{ $section.Title }}</h3>
     <ul class="paper-list">
       {{- range $pages }}
       {{- $authors := delimit .Params.author ", " }}
@@ -23,10 +24,9 @@
       </li>
       {{- end }}
     </ul>
+    {{- end }}{{- end }}
+    {{- end }}
   </div>
-  {{- end }}{{- end }}
-  {{- end }}
-
 
   {{- /* Miscellanea */}}
   <div class="research-section">

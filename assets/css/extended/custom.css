@@ -45,6 +45,14 @@
     text-decoration: underline;
 }
 
+/* Sub-section titles within Research on homepage */
+.paper-subsection-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--primary);
+    margin: 1rem 0 0.4rem 0;
+}
+
 /* Outlet on paper single pages */
 .post-description {
     font-size: 0.95rem;
