@@ -46,10 +46,10 @@ params:
     profileMode:
           enabled: true
           title: Giacomo Anastasia
-          subtitle: "I am a PhD student in Economics at Columbia University (BusEc track). My research interests are in public economics, labor economics, and industrial organization."
-          imageUrl: "picture.jpeg"
-          imageWidth: 160
-          imageHeight: 160
+          subtitle: "I am a third-year PhD student in Economics at Columbia University (BusEc track).\n\nMy research interests are in public economics, labor economics, and industrial organization."
+          imageUrl: "headshot.jpg"
+          imageWidth: 220
+          imageHeight: 210
 
     socialIcons:
         - name: CV
