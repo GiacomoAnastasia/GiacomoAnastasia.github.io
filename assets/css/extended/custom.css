@@ -48,8 +48,8 @@
         gap: 24px;
     }
     .profile-photo img {
-        width: 85%;
-        max-width: 400px;
+        width: 95%;
+        max-width: 460px;
         margin: 0 auto;
     }
 }
