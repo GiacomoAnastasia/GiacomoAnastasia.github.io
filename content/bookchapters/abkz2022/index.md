@@ -3,6 +3,7 @@ title: "The Labour Market in Ukraine: Rebuild Better"
 date: 2022-01-01
 url: /abkz2022/
 pdf: "/ABKZ%202022.pdf"
+title_url: "https://cepr.org/publications/books-and-reports/p362"
 build:
   render: never
 author: ["Giacomo Anastasia", "Tito Boeri", "Marianna Kudlyak", "Oleksandr Zholud"]
