@@ -4,6 +4,10 @@ theme: PaperMod
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
+disableKinds:
+  - taxonomy
+  - term
+  - rss
 pagination:
   pagerSize: 20
 

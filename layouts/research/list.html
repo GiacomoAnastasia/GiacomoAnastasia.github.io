@@ -14,10 +14,15 @@
     <ul class="paper-list">
       {{- range $pages }}
       {{- $authors := delimit .Params.author ", " }}
+      {{- $summary := .Summary }}
       <li>
         <a href="{{ .Params.pdf | default .Permalink }}" target="_blank" rel="noopener">{{ .Title }}</a><br>
         <span class="paper-meta">{{ $authors }}</span>
-        <span class="paper-meta">{{ .Summary | markdownify }}</span>
+        {{- with .Params.publication_url }}
+        <span class="paper-meta"><a href="{{ . }}" target="_blank" rel="noopener">{{ $summary | markdownify }}</a></span>
+        {{- else }}
+        <span class="paper-meta">{{ $summary | markdownify }}</span>
+        {{- end }}
         {{- with .Params.abstract }}
         <p class="paper-abstract">{{ . }}</p>
         {{- end }}
