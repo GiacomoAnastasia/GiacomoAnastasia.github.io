@@ -23,6 +23,9 @@
         {{- else }}
         <span class="paper-meta">{{ $summary | markdownify }}</span>
         {{- end }}
+        {{- with .Params.wp_url }}
+        <span class="paper-meta"><a href="{{ . }}" target="_blank" rel="noopener">[WP version]</a></span>
+        {{- end }}
         {{- with .Params.media }}
         <span class="paper-meta">Media: {{ range $i, $m := . }}{{ if $i }}, {{ end }}{{ if $m.urls }}{{ $m.name }} [{{ range $j, $u := $m.urls }}{{ if $j }} &amp; {{ end }}<a href="{{ $u }}" target="_blank" rel="noopener">here</a>{{ end }}]{{ else }}<a href="{{ $m.url }}" target="_blank" rel="noopener">{{ $m.name }}</a>{{ end }}{{ end }}</span>
         {{- end }}

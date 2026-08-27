@@ -4,6 +4,8 @@ date: 2026-05-27
 url: /abz2026/
 pdf: "/ABZ%202026.pdf"
 publication_url: "https://academic.oup.com/economicpolicy/article-abstract/41/125/7/8696441"
+title_url: "https://academic.oup.com/economicpolicy/article-abstract/41/125/7/8696441"
+wp_url: "/ABZ%202026.pdf"
 doi: "10.1093/epolic/eiag010"
 build:
   render: never
