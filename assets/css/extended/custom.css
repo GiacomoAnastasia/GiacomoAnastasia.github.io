@@ -125,6 +125,11 @@
     display: block;
 }
 
+/* Keep Research details at least as large as Miscellanea on the homepage */
+.homepage-research .paper-list .paper-meta {
+    font-size: 0.95rem;
+}
+
 .paper-list .paper-meta a {
     color: var(--primary);
     font-weight: normal;
