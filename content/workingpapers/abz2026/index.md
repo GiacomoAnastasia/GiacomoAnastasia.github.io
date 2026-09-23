@@ -21,6 +21,8 @@ media:
       url: "https://cepr.org/voxeu/columns/wartime-labour-market-case-ukraine"
     - name: "RFBerlin"
       url: "https://www.rfberlin.com/research-insights/still-standing-the-ukranian-labor-market-at-war/"
+    - name: "The Conversation"
+      url: "https://theconversation.com/ukraines-labour-market-has-been-surprisingly-resilient-during-the-war-with-russia-289924"
     - name: "Financial Times"
       urls:
         - "https://www.ft.com/content/d78cffa4-f74c-436e-8215-d06a5f02f143"
