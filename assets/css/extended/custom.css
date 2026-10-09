@@ -64,7 +64,8 @@
 }
 
 /* Section headers */
-.research-section h2 {
+.research-section h2,
+.paper-subsection-title {
     font-size: 1.3rem;
     font-weight: 700;
     color: #003087;
@@ -84,11 +85,7 @@
 
 /* Sub-section titles within Research on homepage */
 .paper-subsection-title {
-    font-size: 1rem;
-    font-style: italic;
-    font-weight: 500;
-    color: #003087;
-    margin: 1rem 0 0.4rem 0;
+    margin-top: 1rem;
 }
 
 /* Outlet on paper single pages */
