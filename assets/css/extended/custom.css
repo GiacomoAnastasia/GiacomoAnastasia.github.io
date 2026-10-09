@@ -85,8 +85,9 @@
 /* Sub-section titles within Research on homepage */
 .paper-subsection-title {
     font-size: 1rem;
-    font-weight: 600;
-    color: var(--primary);
+    font-style: italic;
+    font-weight: 500;
+    color: #003087;
     margin: 1rem 0 0.4rem 0;
 }
 
