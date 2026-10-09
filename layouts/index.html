@@ -34,6 +34,17 @@
     </ul>
     {{- end }}{{- end }}
     {{- end }}
+    {{- with (site.GetPage "research").Params.work_in_progress }}
+    <h3 class="paper-subsection-title">Work in Progress</h3>
+    <ul class="paper-list">
+      {{- range . }}
+      <li>
+        <span class="paper-title">{{ .title }}</span>
+        {{- with .authors }}<br><span class="paper-meta">{{ . }}</span>{{- end }}
+      </li>
+      {{- end }}
+    </ul>
+    {{- end }}
   </div>
 
   {{- /* Miscellanea */}}

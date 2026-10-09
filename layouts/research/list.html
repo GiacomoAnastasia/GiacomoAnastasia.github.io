@@ -39,6 +39,20 @@
   {{- end }}{{- end }}
   {{- end }}
 
+  {{- with .Params.work_in_progress }}
+  <div class="research-section">
+    <h2>Work in Progress</h2>
+    <ul class="paper-list">
+      {{- range . }}
+      <li>
+        <span class="paper-title">{{ .title }}</span>
+        {{- with .authors }}<br><span class="paper-meta">{{ . }}</span>{{- end }}
+      </li>
+      {{- end }}
+    </ul>
+  </div>
+  {{- end }}
+
 </div>
 
 {{- end }}

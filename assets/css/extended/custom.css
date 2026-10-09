@@ -119,6 +119,11 @@
     text-decoration: underline;
 }
 
+.paper-list .paper-title {
+    color: var(--primary);
+    font-weight: 600;
+}
+
 .paper-list .paper-meta {
     color: var(--primary);
     font-size: 0.9rem;
