@@ -36,7 +36,7 @@
     {{- end }}
     {{- with (site.GetPage "research").Params.work_in_progress }}
     <h3 class="paper-subsection-title">Work in Progress</h3>
-    <ul class="paper-list">
+    <ul class="paper-list work-in-progress-list">
       {{- range . }}
       <li>
         <span class="paper-title">{{ .title }}</span>

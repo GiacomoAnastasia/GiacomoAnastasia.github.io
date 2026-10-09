@@ -133,6 +133,14 @@
     font-size: 0.95rem;
 }
 
+.homepage-research .work-in-progress-list li {
+    margin-bottom: 0.45rem;
+}
+
+.homepage-research .work-in-progress-list li:last-child {
+    margin-bottom: 0;
+}
+
 .paper-list .paper-meta a {
     color: var(--primary);
     font-weight: normal;
