@@ -10,7 +10,7 @@
   {{- $section := site.GetPage . }}
   {{- if $section }}{{- $pages := $section.RegularPages }}{{- if $pages }}
   <div class="research-section">
-    <h2>{{ $section.Title }}</h2>
+    <h2 class="paper-subsection-title">{{ $section.Title }}</h2>
     <ul class="paper-list">
       {{- range $pages }}
       {{- $authors := delimit .Params.author ", " }}
@@ -41,7 +41,7 @@
 
   {{- with .Params.work_in_progress }}
   <div class="research-section">
-    <h2>Work in Progress</h2>
+    <h2 class="paper-subsection-title">Work in Progress</h2>
     <ul class="paper-list">
       {{- range . }}
       <li>
