@@ -64,6 +64,15 @@
 }
 
 /* Section headers */
+.page-header.research-page-header h1 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #003087;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.25rem;
+    border-bottom: 2px solid #B9D9EB;
+}
+
 .research-section h2 {
     font-size: 1.3rem;
     font-weight: 700;
@@ -138,11 +147,11 @@
     font-size: 0.95rem;
 }
 
-.homepage-research .work-in-progress-list li {
-    margin-bottom: 0.45rem;
+.work-in-progress-list li {
+    margin-bottom: 0.25rem;
 }
 
-.homepage-research .work-in-progress-list li:last-child {
+.work-in-progress-list li:last-child {
     margin-bottom: 0;
 }
 
